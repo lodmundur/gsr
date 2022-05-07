@@ -236,23 +236,23 @@ video {
 }
 
 #flísatextakassi {
-  background-image: url(/myndir/flisarklaedning_forsida.jpg);
+  background-image: url(/gsr/myndir/flisarklaedning_forsida.jpg);
   /* background-image: url(/myndir/101_RVK_Vatnsstigur42.jpg); */
 }
 
 #steyputextakassi {
   /* background-image: url(/myndir/steypubakgrunnurnr2.jpg); */
-  background-image: url(/myndir/steypuvorn_forsida.jpg);
+  background-image: url(/gsr/myndir/steypuvorn_forsida.jpg);
 }
 
 #skrautsteinatextakassi {
   /* background-image: url(/myndir/skrautsteinabakgrunnur.jpg); */
-  background-image: url(/myndir/skrautmol_forsida.jpg);
+  background-image: url(/gsr/myndir/skrautmol_forsida.jpg);
 }
 
 #jarðvegsgrindurtextakassi {
   /* background-image: url(/myndir/svarturbakgrunnur.jpg); */
-  background-image: url(/myndir/jardvegsgrindur_forsida.jpg);
+  background-image: url(/gsr/myndir/jardvegsgrindur_forsida.jpg);
 }
 
 .forsíðuhluti-fyrirsögn {
