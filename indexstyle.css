@@ -1,43 +1,154 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  font-size: calc(100vw/80);
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(132, 132, 132, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(86, 86, 86, 0.8);
+  border-radius: 4px;
+  /* box-shadow: 0px 0px 10px 3px black; */
+  /* border: 1px solid black; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(143, 143, 143, 0.8);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  width: 23%;
+  font-size: 1.2em;
+  margin: 0.5em 0 1em 4%;
+}
+
+ul:last-of-type {
+  border-bottom: 1px rgba(255,255,255,0.6) solid;
+}
+
+li {
+  border-top: 1px rgba(255, 255, 255, 0.6) solid;
+  padding: 0.3em 0;
+}
+
+.fyrirsögnhluta {
+  font-size: 3em;
+  align-self: flex-start;
+  margin: 0 0 0.6em 7.5%;
+}
+
+/* hafa búblu utan um kvern kafla, þ.e.a.s. að undir kverjum kafla er aðeins annar litur en bakgrunnur body, svona kassi með mjúk horn */
 
 #efristika {
   display: flex;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 20vh;
+  /* height: calc(100vw/100vh * 4px); */
+  height: fit-content;
   box-shadow: 0px 3px 17px -1px rgba(0,0,0,0.75);
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(to right, rgba(122, 122, 122, 0.8), rgba(28, 28, 28, 0.9));
+}
+
+.efristika-forsíða {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(28, 28, 28, 0.7))
+}
+
+.hlekkar {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6em;
+  margin-right: 2%;
+  padding: 1%;
+  transition-duration: 0.4s;
+}
+
+.hlekkar:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #myndahlekkur {
   height: 96%;
-  margin: 2% 0 2% 2%;
+  margin: 1% 0 1% 2%;
   display: flex;
   align-items: center;
 }
 
 #gsrmerki {
-  height: 90%;
+  height: 7em;
+  box-shadow: 0 0 4px 4px white;
 }
+
 
 #hlekkar {
   margin-right: 4%;
-  width: 45%;
+  width: 55%;
+  display: flex;
 }
-
-
-
 
 .hlekkarforsíða {
   margin-left: 6%;
-  font-size: 20px;
+  font-size: 1.4em;
   cursor: pointer;
   transition-duration: 0.4s;
+  color: white;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    font-size: calc(1.2 * 100vw/80);
+  }
+  
+  #gsrmerki {
+    height: 9em;
+  }
+
+  #hlekkar {
+    width: 65%;
+  }
+
+  .hlekkarforsíða {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hlekkar {
+    flex-direction: column;
+    margin: 1em 0 1em 20%;
+    
+  }
+
+  .hlekkarforsíða {
+    font-size: 2em;
+    margin: 0.2em 0;
+  }
 }
 
 .hlekkarforsíða:hover {
@@ -48,3 +159,341 @@
   color: white;
 }
 
+#myndabandskassi {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 0;
+  border: none;
+  margin-bottom: -4px;
+  z-index: -10;
+}
+
+#textakassi-myndband {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  z-index: 300;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+#fyrirsögn-myndband {
+  font-size: 7em;
+}
+
+#lesmál-myndband {
+  font-size: 3em;
+}
+
+.forsíðuhlutar {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.myndirforsíðuhluta {
+  width: 50%;
+  height: 100%;
+}
+
+.forsíðuhluti-textakassi {
+  width: 50%;
+  height: 100%;
+  /* display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  transition-duration: 0.4s;
+}
+
+.forsíðuhluti-textakassi-hægri:hover {
+  transform: scale(1.04);
+  margin-left: -1%;
+}
+
+.forsíðuhluti-textakassi-vinstri:hover {
+  transform: scale(1.04);
+}
+
+.forsíðuhluti-yfirmynd {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0.85);
+}
+
+#flísatextakassi {
+  background-image: url(/myndir/flisarklaedning_forsida.jpg);
+  /* background-image: url(/myndir/101_RVK_Vatnsstigur42.jpg); */
+}
+
+#steyputextakassi {
+  /* background-image: url(/myndir/steypubakgrunnurnr2.jpg); */
+  background-image: url(/myndir/steypuvorn_forsida.jpg);
+}
+
+#skrautsteinatextakassi {
+  /* background-image: url(/myndir/skrautsteinabakgrunnur.jpg); */
+  background-image: url(/myndir/skrautmol_forsida.jpg);
+}
+
+#jarðvegsgrindurtextakassi {
+  /* background-image: url(/myndir/svarturbakgrunnur.jpg); */
+  background-image: url(/myndir/jardvegsgrindur_forsida.jpg);
+}
+
+.forsíðuhluti-fyrirsögn {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  box-shadow: 0px 0px 7px 0.7px rgb(255, 255, 255);
+}
+
+.forsíðuhluti-lesmál {
+  width: 70%;
+  margin-top: 1em;
+  font-size: 1.4em;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4), rgba(132, 131, 131, 0.8));
+  display: flex;
+  align-items: center;
+}
+
+#hafasamband {
+  margin-left: 10%;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+.hluti {
+  width: 85%;
+  /* background-image: url(/myndir/mjögheillsteypubakgrunnur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 17px 6px rgba(28, 28, 28, 0.75);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8em;
+}
+
+
+.aukafyrirsögn {
+  margin: 0.8em 4% 0.2em 4%;
+  font-size: 1.6em;
+}
+
+.textar {
+  margin: 0.8em 4% 1.3em 4%;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.fyrirsögnogtexti {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1em 6%;
+}
+
+.aðalfyrirsögn {
+  align-self: flex-start;
+  margin: 0.5em 0 0.5em 7.5%;
+  font-size: 4em;
+  text-shadow: 3px 3px 20px rgba(0, 0, 0, 1);
+}
+
+#bakgrunnur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: -5;
+}
+
+#aðalhlekkar {
+  align-self: flex-start;
+  margin: 2em 0 1em 7.5%;
+  width: 80%;
+  height: 3em;
+}
+
+#bæklingar {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bæklingur {
+  width: 30%;
+  margin: 0 0.5%; 
+}
+
+.bæklingur-fyrirsögn {
+  font-size: 1.4em;
+  margin: 0.5em 0 1.0em 0;
+}
+
+@media screen and (max-width: 900px) {
+  .bæklingur {
+    width: 30%;
+  }
+  
+  .bæklingur-fyrirsögn {
+    font-size: 1.2em;
+  }
+
+
+}
+
+.bæklingur-hlekkur {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2%;
+  margin: 3em 0;
+  font-size: 1.1em;
+  transition-duration: 0.4s;
+}
+
+.bæklingur-hlekkur:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bæklingur-mynd {
+  width: 80%;
+  margin: 1.5em 0;
+}
+
+#listiyfirverkefni {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+.eittverkefni {
+  width: 24.9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.eittverkefni3 {
+  width: 33.2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.eittverkefni-mynd {
+  width: 100%;
+  transition-duration: 0.4s;
+}
+
+.eittverkefni-mynd:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.eittverkefni-nafn {
+  text-align: center;
+  width: 90%;
+  margin: 1em 0;
+}
+
+.eittverkefni-texti {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+#verkefni-myndir-fyrirsögn {
+  font-size: 2em;
+  margin-left: 6%;
+}
+
+#verkefni-myndir {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 35em;
+  width: 90%;
+  margin: 0.9em 6%;
+  padding: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.verkefni-myndir-mynd {
+  width: 30%;
+  margin-bottom: 1em;
+  border: ridge;
+}
+
+.verkefni-myndir-mynd:hover {
+  cursor: pointer;
+}
+
+#modal {
+  visibility:hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+
+#modalmynd {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#lokamodal {
+  position:absolute;
+  top: 0.5em;
+  right: 1em;
+  background-color: red;
+  padding: 1%;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  #lokamodal {
+    font-size: 2em;
+  }
+}

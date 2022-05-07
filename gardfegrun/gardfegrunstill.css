@@ -1,0 +1,233 @@
+
+#garðfegrun-hlekkar {
+  display: flex;
+  align-self: center;
+  width: 95%;
+  align-self: center;
+  margin-bottom: 1.5em;
+}
+
+.garðfegrun-hlekkur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2vw;
+  transition-duration: 0.4s;
+}
+
+.garðfegrun-hlekkur:hover {
+  transform: scale(1.05);
+}
+
+.garðfegrun-hlekkur-mynd {
+  width: 100%;
+}
+
+#garðfegrun-skrautmöl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#listiyfir-skrautmöl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+#listiyfir-skrautmöl {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#garðfegrun-skrautmöl {
+  padding: 1em 0;
+}
+
+.tegundafskrautmöl {
+  width: 23.5%;
+  margin: 0.5em 0.5% 0.5em 0.5%;
+  transition-duration: 0.4s;
+}
+
+.tegundafskrautmöl:hover {
+  transform: scale(1.05);
+}
+
+.fyrirsögn-tegundafskrautmöl {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.mynd-tegundafskrautmöl {
+  width: 90%;
+}
+
+#miðjarðarhafsmöl-sumar2021 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3em 3% 1em 3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8em;
+}
+
+#miðjarðarhafsmöl-sumar2021-mynd {
+  width: 50%;
+  cursor: pointer;
+}
+
+#miðjarðarhafsmöl-sumar2021-texti {
+  height: 90%;
+  margin: 0 2%;
+  align-self: flex-start;
+}
+
+#miðjarðarhafsmöl-sumar2021-fyrirsögn {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#miðjarðarhafsmöl-sumar2021-textinn {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+#garðfegrun-skrautmöl-notkunarmöguleikar {
+  align-items: center;
+}
+
+.skrautmöl-notkunarmöguleikar {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 95%;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.skrautmöl-notkunarmöguleikar-3-dæmi {
+  width: 30%;
+}
+
+.skrautmöl-notkunarmöguleikar-2-dæmi {
+  width: 45%;
+}
+
+.skrautmöl-notkunarmöguleikar-4-dæmi {
+  width: 23%;
+}
+
+.fyrirsögn-skrautmöl-notkunarmöguleikar {
+  font-size: 1.5em;
+  margin: 0.1em 0 0.5em 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.fyrirsögn-skrautmöl-notkunarmöguleikar:hover {
+  color: rgba(255,255,255,0.5)
+}
+
+.skrautmöl-notkunarmöguleikar-mynd {
+  width: 100%;
+  cursor: pointer;
+}
+
+#jarðvegsgrindur-myndband {
+  margin: 4%;
+  width: 92%;
+  z-index: 2;
+}
+
+#jarðvegsgrindur-yfirlit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 2%;
+  padding: 2% 0 1% 0;
+}
+
+.jarðvegsgrindur-dæmi {
+  width: 26%;
+  margin-bottom: 2em;
+}
+
+.jarðvegsgrindur-dæmi-mynd {
+  width: 100%;
+  cursor: pointer;
+}
+
+.jarðvegsgrindur-dæmi-aðskilnaðarlína {
+  border-bottom: 1px white solid;
+  margin: 0.7em 0;
+  box-shadow: none;
+}
+
+.jarðvegsgrindur-dæmi-texti {
+  line-height: 1.4em;
+}
+
+#jarðvegsgrindur-nánariupplýsingar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3em 0;
+  align-items: center;
+}
+
+.jarðvegsgrindur-nánariupplýsingar-hlekkur {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.6em;
+  font-size: 1.5em;
+  margin: 0.6em;
+  width: fit-content;
+  text-decoration: underline;
+  transition-duration: 0.4s;
+}
+
+.jarðvegsgrindur-nánariupplýsingar-hlekkur:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#jarðvegsskiljur-texti {
+  font-size: 1.3em;
+}
+
+.jarðvegsskiljur-myndband {
+  z-index: 2;
+  width: 92%;
+  align-self: center;
+  margin: 1em 0;
+}
+
+#jarðvegsskiljur-myndir-kassi {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 2%;
+  padding: 2% 0;
+}
+
+#jarðvegsskiljur-myndir-aðskilnaðarlína {
+  border-top: 1px white solid;
+  box-shadow: none;
+  margin-bottom: 1em;
+  margin: 1.7em 0 1.7em 1.5%;
+}
+
+#jarðvegsskiljur-myndir {
+  display: flex;
+  justify-content: space-around;
+}
+
+#millitexti-jarðvegsskiljur {
+  font-size: 1.2em;
+  margin-left: 1.5%;
+  margin-bottom: 0.8em;
+}
+
+
+.jarðvegsskiljur-mynd {
+  width: 22%;
+  cursor: pointer;
+}

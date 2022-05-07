@@ -1,0 +1,103 @@
+
+
+#fyrstitextisteypuvörn {
+  font-size: 1.5em;
+}
+
+#aðallisti {
+  width: 75%;
+  font-size: 1.5em;
+}
+
+#aðallisti li {
+  padding: 0.8em 0;
+  font-size: 1.05em;
+}
+
+#aðallisti li span {
+  font-size: 1.3em;
+}
+
+#prófogvott-hlekkur {
+  align-self: center;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 1.8em;
+  padding: 0.5em;
+  margin: 1em 0;
+  text-decoration: underline;
+  transition-duration: 0.4s;
+}
+
+#prófogvott-hlekkur:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#steinsteypamyndband1 {
+  z-index: 2;
+  width: 80%;
+  align-self: center;
+  margin: 1.5em;
+}
+
+#fréttagreinkassi {
+  height: 12em;
+}
+
+#greinífréttabréfi {
+  background-color: rgba(0,0,0,0.9);
+  font-size: 1.4em;
+  padding: 0.5em;
+  width: 50%;
+  margin: 5em 0 8em 4%;
+  text-decoration: underline;
+}
+
+#innlendverkefni-texti {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#steypuvörn-vottanirogpróf-hlekkar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.steypuvörn-vottanir-hlekkar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.steypuvörn-vottanirogpróf-hlekkur {
+  background-color: rgba(3, 172, 19, 0.6);
+  font-size: 1.3em;
+  padding: 0.4em;
+  margin: 1em 4%;
+  text-decoration: underline;
+  width: fit-content;
+  transition-duration: 0.4s;
+}
+
+.steypuvörn-vottanirogpróf-hlekkur:hover {
+  background-color: rgba(3, 172, 19, 0.9);
+}
+
+#steypuvörn-próf-myndir {
+  display: flex;
+  justify-content:space-around;
+  margin-bottom: 2em;
+}
+
+.steypuvörn-próf-fyrirsögn {
+  margin-left: 0;
+}
+
+.steypuvörn-próf-mynd {
+  width: 40%;
+}
+
+.steypuvörn-próf-myndir-mynd {
+  width: 90%;
+  cursor: pointer;
+}
+
