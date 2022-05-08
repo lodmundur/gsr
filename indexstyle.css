@@ -183,6 +183,12 @@ video {
   text-shadow: 1px 1px black;
 }
 
+@media screen and (max-width: 650px) {
+  #textakassi-myndband {
+    top: 30%;
+  }
+}
+
 #fyrirsögn-myndband {
   font-size: 7em;
 }
@@ -193,7 +199,7 @@ video {
 
 .forsíðuhlutar {
   width: 100%;
-  height: 80vh;
+  height: 37vw;
   display: flex;
 }
 
