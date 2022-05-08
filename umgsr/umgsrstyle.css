@@ -1,4 +1,6 @@
 body {
   background-image: url(/gsr/myndir/umgsr_bakgrunnur.jpg);
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
