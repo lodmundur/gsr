@@ -161,7 +161,11 @@ li {
 }
 
 #myndabandskassi {
-  width: 100%;
+  width: 100vw;
+}
+
+.myndband-forsíða {
+  width: 100vw;
 }
 
 video {
